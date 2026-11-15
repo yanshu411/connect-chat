@@ -1,0 +1,12 @@
+# Git-connected deploy from repository root.
+# The actual static website lives in the subdirectory below.
+[build]
+  publish = "ConnectChat_Firebase_Netlify_Ready"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

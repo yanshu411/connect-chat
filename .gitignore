@@ -1,0 +1,26 @@
+# Local development / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dependencies and generated output (for optional future tooling)
+node_modules/
+dist/
+build/
+.netlify/
+*.log
+
+# Never commit backend credentials
+.env
+.env.*
+!.env.example
+**/*serviceAccount*.json
+**/*service-account*.json
+*.pem
+*.key
+
+# Local test data
+*.sqlite
+*.sqlite3
+*.db
